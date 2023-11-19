@@ -1,0 +1,136 @@
+@media (max-width: 768px) {
+  /* Adjust layout for screens with a maximum width of 768px */
+
+  #news {
+    flex-direction: column; /* Change the direction of 'news' section to column */
+  }
+
+  .main {
+    order: 1; /* Reposition 'main' to appear first */
+  }
+
+  .criticsimg img {
+    width: 25%;
+    height: 20%;
+  }
+
+  .side {
+    order: 3; /* Reposition 'side' to appear third */
+  }
+
+  .culture {
+    order: 4; /* Reposition 'culture' to appear fourth */
+    padding: 1em; /* Add padding to 'culture' section */
+  }
+
+  .headerlinks a {
+    display: none; /* Hide navigation links in the header */
+  }
+
+  .headerlinks button {
+    display: none; /* Hide the 'Subscribe' button in the header */
+  }
+
+  .side,
+  .main {
+    flex: 1; /* Equal width for 'side' and 'main' sections */
+  }
+
+  .news-item {
+    border: none; /* Remove borders from news items */
+    margin-right: 0; /* Remove right margin from news items */
+  }
+
+  .main article {
+    border: none; /* Remove borders from articles in 'main' */
+  }
+
+  .firstside article {
+    border: none; /* Remove borders from articles in 'firstside' */
+  }
+
+  .secondmain {
+    flex-direction: column; /* Change the direction of 'secondmain' to column */
+    order: 1; /* Reposition 'secondmain' to appear first */
+  }
+
+  .secondmaincontent {
+    order: 6; /* Reposition 'secondmaincontent'*/
+  }
+
+  .secondmainimg {
+    order: 5; /* Reposition 'secondmainimg' */
+    width: 100%; /* Set full width for 'secondmainimg' */
+  }
+
+  .secondmainimg {
+    margin-top: 0em; /* Reset the top margin for 'secondmainimg' */
+  }
+
+  #spotlight {
+    flex-direction: column; /* Change the direction of 'spotlight' to column */
+  }
+
+  #spotlight article {
+    border-bottom: 1px solid rgb(235, 233, 233); /* Add bottom border to articles in 'spotlight' */
+    margin-top: 0; /* Reset top margin for 'spotlight' articles */
+  }
+
+  #spotlight article:last-child {
+    border: none; /* Remove border from the last article in 'spotlight' */
+  }
+
+  #spotlight img {
+    margin-top: 0; /* Reset top margin for images in 'spotlight' */
+  }
+
+  .culture h2 {
+    display: none; /* Hide h2 elements in the 'culture' section */
+  }
+
+  .culture img {
+    width: 10%; /* Set width for images in the 'culture' section */
+  }
+
+  .content {
+    display: flex; /* Set 'content' section to display as flex */
+    margin-top: -2.5em; /* Adjust top margin for 'content' */
+  }
+
+  .imgc {
+    order: 8; /* Reposition 'imgc' to appear eighth */
+    flex: 1; /* Set flex properties for 'imgc' */
+    margin-top: 6em; /* Adjust top margin for 'imgc' */
+  }
+
+  .conc {
+    order: 7; /* Reposition 'conc' */
+    flex: 2; /* Set flex properties for 'conc' */
+  }
+
+  .critics {
+    flex-direction: column; /* Change the direction of 'critics' to column */
+    text-align: left; /* Set text alignment to left within 'critics' */
+  }
+
+  .critics article {
+    border-bottom: 1px solid rgb(235, 233, 233); /* Add bottom border to articles in 'critics' */
+  }
+
+  .critics img {
+    width: 100%; /* Set full width for images in 'critics' */
+    max-height: auto;
+    max-width: 100%;
+  }
+
+  .imgcritics {
+    order: 9; /* Reposition 'imgcritics'*/
+    flex: 1; /* Set flex properties for 'imgcritics' */
+    margin-top: 6em; /* Adjust top margin for 'imgcritics' */
+    border: none; /* Remove border from 'imgcritics' */
+  }
+
+  footer {
+    padding-bottom: 1em; /* Add padding to the bottom of the footer */
+  }
+}

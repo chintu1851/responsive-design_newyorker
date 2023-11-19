@@ -1,0 +1,403 @@
+:root {
+  /* Font sizes */
+  --secondaryHeader: 0.75rem;
+  --mainHeader: 1.75em;
+  --descriptionSize: 1em;
+  --authors: 0.875em;
+  --oneem: 1em;
+
+  /* Colors */
+  --divider: rgb(248, 248, 248);
+  --secondary: rgb(219, 51, 52);
+  --description: #333;
+  --bdcolor: #ccc;
+  --button: #2e8fef;
+
+  /* Spacing */
+  --paddingMedium: 0.5em;
+  --headerbg: white;
+
+  /* Font families */
+  --navfont: Arial, Helvetica, sans-serif;
+  --descriptionfont: Verdana, Geneva, Tahoma, sans-serif;
+  --authorfont: Georgia, 'Times New Roman', Times, serif;
+  --footerfont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Universal box-sizing rule for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Resetting default margin on the body */
+body {
+  margin: 0;
+}
+
+/* Styling for the header section */
+header {
+  text-align: center;
+  position: sticky;
+  top: 0;
+  background-color: var(--headerbg);
+}
+
+/* Styling for the New Yorker logo within the header */
+header img {
+  min-width: 50%;
+  padding: 2em;
+}
+
+/* Styling for the navigation section */
+nav {
+  border-top: 1px solid rgb(235, 233, 233);
+  border-bottom: 1px solid rgb(235, 233, 233);
+  padding: var(--paddingMedium);
+}
+
+/* Styling for navigation links */
+nav a {
+  text-decoration: none;
+  padding-right: var(--paddingMedium);
+  padding-left: var(--paddingMedium);
+  color: var(--description);
+  font-size: var(--secondaryHeader);
+  font-family: var(--navfont);
+}
+
+/* Styling for an empty div element */
+.emptydiv {
+  flex: 1;
+}
+
+/* Styling for the New Yorker logo section */
+.imgheader {
+  flex: 2;
+  justify-content: center;
+}
+
+/* Styling for the 'news' section */
+#news {
+  display: flex;
+  border-bottom: 1px solid rgb(235, 233, 233);
+  padding-bottom: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+/* Styling for side and main news sections */
+.side {
+  flex: 1;
+}
+
+.main {
+  flex: 2;
+}
+
+/* Styling for the main content section */
+main {
+  margin: 1em;
+}
+
+/* Styling for individual articles in the 'news' section */
+.firstside article {
+  border-bottom: 1px solid rgb(235, 233, 233);
+  padding: 1em;
+}
+
+/* Removing border for the last article in the 'firstside' section */
+.firstside article:last-child {
+  border: none;
+}
+
+/* Styling for individual news items */
+.news-item {
+  border-right: 1px solid rgb(235, 233, 233);
+  margin-right: 0.5em;
+}
+
+/* Styling for articles in the main news section */
+.main article {
+  border-bottom: 1px solid rgb(235, 233, 233);
+  padding: 0 1em 1em 1em;
+}
+
+/* Removing border for the last article in the main section */
+.main article:last-child {
+  border: none;
+}
+
+/* Removing border for the last news item */
+.news-item:last-child {
+  border: none;
+  margin-right: 0;
+}
+
+/* Styling for 'mainsidesecond' section */
+.mainsidesecond {
+  flex-direction: row;
+}
+
+/* Styling for the 'secondmain' section */
+.secondmain {
+  display: flex;
+}
+
+/* Styling for the second main image */
+.secondmainimg {
+  width: 30%;
+  margin-top: 4em;
+}
+
+/* Setting the direction of 'secondmainimg' to column */
+.secondmainimg {
+  flex-direction: column;
+}
+
+/* Styling for images within side and main news sections */
+.side img,
+.main img {
+  width: 100%;
+}
+
+/* Styling for main headers */
+.main-header {
+  font-size: var(--mainHeader);
+}
+
+/* Additional styling for main headers */
+.main .main-header {
+  text-transform: uppercase;
+}
+
+/* Styling for secondary headers */
+.secondary-header {
+  color: var(--secondary);
+  font-size: var(--secondaryHeader);
+  text-transform: uppercase;
+}
+
+/* Styling for article descriptions */
+.description {
+  color: var(--description);
+  font-size: var(--descriptionSize);
+  font-family: var(--descriptionfont);
+}
+
+/* Styling for author names */
+.author {
+  font-weight: bold;
+  font-family: var(--authorfont);
+}
+
+/* Styling for 'culture' section headings */
+.culture h1 {
+  font-style: italic;
+}
+
+/* Styling for articles in the 'culture' section */
+.culture article {
+  border-bottom: 1px solid rgb(235, 233, 233);
+}
+
+/* Removing border for the last article in the 'culture' section */
+.culture article:last-child {
+  border: none;
+}
+
+/* Styling for images in the 'culture' section */
+.culture img {
+  width: 20%;
+  height: 20%;
+}
+
+/* Styling for containers that hold text and images */
+.nc {
+  display: flex;
+  align-items: center;
+}
+
+/* Additional styling for containers that hold text and images */
+.ncc {
+  flex-direction: column;
+  width: 100%;
+  padding-right: 1em;
+}
+
+/* Styling for the 'headerpart' section */
+.headerpart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for header links */
+.headerlinks {
+  flex: 1;
+  margin-right: 1.875em;
+}
+
+/* Styling for the 'Subscribe' button within header links */
+.headerlinks button {
+  background: var(--button);
+  padding: 1.5em;
+  border: none;
+  border-radius: 0.187em;
+  color: var(--divider);
+  font-family: var(--navfont);
+  font-size: var(--secondaryHeader);
+  line-height: 0.187em;
+  text-align: center;
+  width: 30%;
+}
+
+/* Styling for navigation links within header */
+.headerlinks a {
+  text-decoration: none;
+  margin-right: 1.25em;
+  font-family: var(--navfont);
+  font-size: var(--oneem);
+  color: var(--description);
+  font-weight: 600;
+}
+
+/* Styling for the 'spotlight' section */
+#spotlight {
+  display: flex;
+  border-bottom: 1px solid rgb(235, 233, 233);
+}
+
+/* Styling for images in the 'spotlight' section */
+#spotlight img {
+  width: 100%;
+  height: auto;
+}
+
+/* Styling for section headings */
+.headings {
+  font-family: var(--navfont);
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Styling for articles in the 'spotlight' section */
+#spotlight article {
+  flex: 1;
+  margin: 1.25em;
+}
+
+/* Styling for the 'criticsimg' section */
+.criticsimg {
+  text-align: center;
+}
+
+/* Styling for images in the 'criticsimg' section */
+.criticsimg img {
+  width: 20%;
+  height: 20%;
+}
+
+/* Styling for the 'critics' section */
+.critics {
+  display: flex;
+  border-bottom: 1px solid rgb(235, 233, 233);
+  text-align: center;
+}
+
+/* Additional styling for images in the 'critics' section */
+.critics img {
+  width: 70%;
+}
+
+/* Styling for articles in the 'critics' section */
+.critics article {
+  flex: 1;
+  padding: 1.25em;
+}
+
+/* Styling for images within the 'imgcritics' section */
+.imgcritics {
+  border-right: 1px solid rgb(235, 233, 233);
+  text-align: center;
+  display: inline-block;
+}
+
+/* Removing border for the last article within 'imgcritics' */
+article:last-child .imgcritics {
+  border: none;
+}
+
+/* Styling for the footer section */
+footer {
+  background-color: var(--description);
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* Styling for the New Yorker logo within the footer */
+.imgfooter {
+  text-align: center;
+  padding: 0.625em;
+  border-bottom: 1px solid rgb(235, 233, 233);
+}
+
+/* Styling for the contact form heading */
+.contactform {
+  font-family: var(--footerfont);
+  text-align: center;
+  color: var(--divider);
+}
+
+/* Styling for the form element */
+form {
+  width: 50%;
+  margin: auto;
+  padding: 2em;
+  font-family: var(--footerfont);
+}
+
+/* Styling for fieldsets within the form */
+fieldset {
+  margin-bottom: 1.25em;
+  padding: 0.625em;
+  border: 1px solid rgb(235, 233, 233);
+  color: var(--divider);
+}
+
+/* Styling for labels within the form */
+label {
+  display: block;
+  margin-bottom: 0.25em;
+  color: var(--divider);
+}
+
+/* Styling for input elements and text areas */
+input[type="text"],
+input[type="email"],
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.312em;
+  margin-bottom: 0.625em;
+  border: 1px solid rgb(235, 233, 233);
+  font-size: var(--authors);
+  border-radius: 0.187em;
+  color: var(--description);
+}
+
+/* Styling for submit and reset buttons */
+button[type="submit"],
+button[type="reset"] {
+  background-color: var(--button);
+  border: none;
+  border-radius: 0.187em;
+  padding: 0.75em 1.562em;
+  font-weight: bold;
+  color: var(--description);
+  font-size: var(--authors);
+}
+
+/* Styling for the reset button */
+button[type="reset"] {
+  background-color: var(--divider);
+}
